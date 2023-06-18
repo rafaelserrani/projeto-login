@@ -6,17 +6,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
   <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
   <main>
     <section id="login">
       <div id="foto">
-        foto
       </div>
       <div id="formulario">
         <h1>Login</h1>
         <p>Seja bem vido(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
-        <form action="login.php" method="post"></form>
+        <form action="login.php" method="post" autocomplete="on">
+          
+          <div>
+            <span class="material-symbols-outlined">
+              person
+              </span>
+            <label for="iemail" id="usuario"></label>
+            <input type="email" name="mail" id="iemail" required minlength="5" maxlength="30" placeholder="Email" autocomplete="email">
+          </div>
+          
+          <div>
+            <span class="material-symbols-outlined">
+              key
+              </span>
+              <label for="isenha" id="passoword"></label>
+              <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" placeholder="insira sua senha" autocomplete="current-password">
+          </div>
+
+              <div>
+                <input type="submit" value="Entrar" id="ientrar">
+                <input type="submit" value="Esqueci a senha">
+                </input>
+              </div>
+        </form>
       </div>
     </section>
   </main>
